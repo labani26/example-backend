@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 
 
 router.get('/blog', (req, res) => {
-  res.sendFile(path.join(__dirname, '../templates/blogHome.html'));
+  res.sendFile(path.join(__dirname, '../views/blogHome.html'));
 });
 
 router.get('/blogpost/:slug', (req, res) => {
@@ -25,7 +25,7 @@ router.get('/blogpost/:slug', (req, res) => {
     return res.status(404).send('Blog post not found');
   }
 
-  res.sendFile(path.join(__dirname, '../templates/blogPage.html'));
+  res.sendFile(path.join(__dirname, '../views/blogPage.html'));
 });
 
 module.exports = router;
