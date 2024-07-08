@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'static')));
 app.use('/', blogRouter);
 
 
-app.get('/blogPosts', (req, res) => {
+app.use('/blogPosts', (req, res) => {
   console.log(blogs);
   res.render('blogs', {
     blogs: blogs

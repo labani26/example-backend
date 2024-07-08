@@ -1,12 +1,13 @@
-<h2>I am Titas Majumder. <br></h2>
-<h2>Tu vi kya yaad rakhegi. </h2>
+<h1>Hello World ! <br></h1>
+
+<br>
 
 {{#each blogs}}
 <div class="card">
     <h5 class="card-header">{{this.title}}</h5>
     <div class="card-body">
         <p class="card-text">{{this.content}}</p>
-        <a href="#" class="btn btn-primary">Like</a>
+        {{!-- <a href="/blogpost" class="btn btn-primary">{{this.slug}}</a> --}}
     </div>
 </div><hr>
-{{/each}}
+{{/each}} 
